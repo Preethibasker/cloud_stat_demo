@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Animal Rescue</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h2>Saving Animals, One Life at a Time</h2>
+        <p>Join us in giving abandoned animals a second chance.</p>
+    </section>
+
+    <!-- Report Section -->
+    <section id="report" class="section">
+        <h2>Report an Animal in Need</h2>
+        <form id="reportForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="location">Your Location:</label>
+            <input type="location" id="location" name="location" required>
+            <label for="type">Pet Type:</label>
+            <input type="type" id="type" name="type" required>
+            <label for="details">Details of Animal:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+    <section id="adopt" class="section">
+        <h2>Adopt a Pet</h2>
+        <p>Looking for a furry friend to bring into your home? Our adoption process is simple and straightforward! Follow these steps:</p>
+        
+        <h3>Steps to Adopt</h3>
+        <ol>
+            <li><strong>Choose a Pet:</strong> Browse through the animals available for adoption. Check their details and photos.</li>
+            <li><strong>Fill out an Adoption Application:</strong> Submit an adoption application to express interest in the pet.</li>
+            <li><strong>Meet the Pet:</strong> We’ll arrange a meet-and-greet session to ensure a good match.</li>
+            <li><strong>Adopt and Bring Them Home:</strong> Once approved, you can finalize the adoption and bring your new pet home!</li>
+        </ol>
+
+        <h3>Available Pets for Adoption</h3>
+        <p>We have a variety of pets ready for adoption! Below are some of the pets available:</p>
+
+        <div id="adoptPets">
+            <div class="pet">
+                <img src="https://www.resqct.org/images-blog/content/142/Indie%202.jpeg" alt="Dog available for adoption">
+                <h4>Buddy</h4>
+                <p>Breed:Indie dog</p>
+                <p>Age: 2 years</p>
+                <p>Friendly, energetic, and loves outdoor activities!</p>
+                <button class="adopt-btn">Adopt Buddy</button>
+            </div>
+            <div class="pet">
+                <img src="https://preview.redd.it/indie-cat-for-adoption-1-5-years-old-v0-2g0wd3jgfv0a1.jpg?width=6000&format=pjpg&auto=webp&s=140f10e1f8a96256d626d66f6680d53b13962283" alt="Cat available for adoption">
+                <h4>Molly</h4>
+                <p>Breed:Indie Cat</p>
+                <p>Age: 1 years</p>
+                <p>Quiet, affectionate, and enjoys cuddles!</p>
+                <button class="adopt-btn">Adopt Molly</button>
+            </div>
+        </div>
+        <div id="adoptPets">
+            <div class="pet">
+                <img src="https://animalcorner.org/wp-content/uploads/2020/04/border-collie-german-shepherd-mix-2048x1365.jpg" alt="Dog available for adoption">
+                <h4>Jacky</h4>
+                <p>Breed:Cross Breed</p>
+                <p>Age: 3 years</p>
+                <p>Friendly, energetic, and loves outdoor activities!</p>
+                <button class="adopt-btn">Adopt Jacky</button>
+            </div>
+            <div class="pet">
+                <img src="https://i.pinimg.com/originals/15/3f/2e/153f2ef3a6c104f8efd99531ba25c3a9.jpg" alt="Cat available for adoption">
+                <h4>Lily</h4>
+                <p>Breed:persian Cat</p>
+                <p>Age: 2 years</p>
+                <p>Quiet, affectionate, and enjoys cuddles!</p>
+                <button class="adopt-btn">Adopt Lily</button>
+            </div>
+        </div>
+
+        <h3>Adoption Application</h3>
+        <form id="adoptForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="petChoice">Which Pet Are You Interested In?</label>
+            <select id="petChoice" name="petChoice">
+                <option value="Buddy">Buddy - Indie dog</option>
+                <option value="Molly">Molly - Indie Cat</option>
+                <option value="Jacky">Jacky - Cross dog</option>
+                <option value="Molly">lily - Persian Cat</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us why you want to adopt this pet..."></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+    </section>
+    <section id="donate" class="section">
+        <h2>Support Animal Rescue</h2>
+        <p>Your generous donation helps us save and care for animals in need. Whether it’s a one-time donation or a recurring contribution, every little bit helps. Thank you for your kindness!</p>
+
+        <h3>Donation Options</h3>
+        <div class="donation-options">
+            <div class="option">
+                <h4>One-Time Donation</h4>
+                <p>Donate any amount once to support our cause.</p>
+                <form action="https://www.paypal.com/donate" method="POST" target="_blank">
+                    <input type="number" name="amount" placeholder="Enter Amount" required>
+                    <button type="submit" class="donate-btn">Donate Now</button>
+                </form>
+            </div>
+
+            <div class="option">
+                <h4>Monthly Subscription</h4>
+                <p>Become a monthly donor to provide ongoing support to animals in need.</p>
+                <form action="https://www.paypal.com/donate" method="POST" target="_blank">
+                    <input type="number" name="amount" placeholder="Enter Amount" required>
+                    <button type="submit" class="donate-btn">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+
+        <h3>Other Ways to Donate</h3>
+        <p>If you prefer other ways to donate or want to contribute in-kind, feel free to get in touch with us!</p>
+        <ul>
+            <li>Bank Transfer</li>
+            <li>Donate Goods (Food, Toys, Beds)</li>
+            <li>Volunteer with Us</li>
+        </ul>
+    </section>
+    <!-- Volunteer Section -->
+    <section id="volunteers" class="section">
+        <h2>Volunteer with Us</h2>
+        <p>We rely on the support of dedicated volunteers to help us rescue and care for animals. By volunteering with us, you can make a huge difference in the lives of animals in need. Below are the volunteer roles available and how you can get involved.</p>
+
+        <div class="volunteer-roles">
+            <div class="role">
+                <h3>Animal Caretaker</h3>
+                <p>As an Animal Caretaker, you'll be responsible for feeding, grooming, and providing medical care to the animals at our rescue center. This is a hands-on role that requires compassion and dedication to the welfare of the animals.</p>
+            </div>
+            <div class="role">
+                <h3>Adoption Counselor</h3>
+                <p>Help match animals with their forever homes by assisting potential adopters in finding the right pet. You'll conduct interviews, provide advice, and guide families through the adoption process.</p>
+            </div>
+            <div class="role">
+                <h3>Event Volunteer</h3>
+                <p>Join us at adoption events, fundraisers, and awareness campaigns. Event volunteers assist with event setup, managing activities, and interacting with attendees to promote our cause.</p>
+            </div>
+            <div class="role">
+                <h3>Fundraising Volunteer</h3>
+                <p>If you have a knack for organizing or raising money for a good cause, consider becoming a Fundraising Volunteer. You will help organize online and offline fundraising campaigns to support the rescue efforts.</p>
+            </div>
+        </div>
+
+        <h3>How to Volunteer</h3>
+        <p>If you're interested in volunteering with us, please fill out the volunteer application form below, and we’ll get back to you as soon as possible.</p>
+
+        <!-- Volunteer Application Form -->
+        <form action="mailto:volunteer@animalrescue.org" method="POST" enctype="multipart/form-data" class="volunteer-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Which role are you interested in?</label>
+                <select id="role" name="role" required>
+                    <option value="Animal Caretaker">Animal Caretaker</option>
+                    <option value="Adoption Counselor">Adoption Counselor</option>
+                    <option value="Event Volunteer">Event Volunteer</option>
+                    <option value="Fundraising Volunteer">Fundraising Volunteer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Why do you want to volunteer with us?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Share why you're passionate about volunteering" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Apply Now</button>
+            </div>
+        </form>
+    </section>
+     <!-- About Us Section -->
+     <section id="about" class="section">
+        <h2>About Animal Rescue</h2>
+        <p>Welcome to Animal Rescue! We are a non-profit organization dedicated to rescuing and providing care to abandoned, abused, and neglected animals. Our mission is to give them a second chance at a happy, healthy life in a loving home.</p>
+
+        <div class="about-content">
+            <div class="about-item">
+                <h3>Our Mission</h3>
+                <p>We strive to rescue animals from the streets, shelters, and other harsh environments, providing them with the medical care and love they need to recover. Our goal is to ensure that every animal finds a permanent, loving home where they are cherished.</p>
+            </div>
+            <div class="about-item">
+                <h3>Our Vision</h3>
+                <p>Our vision is a world where no animal is abandoned or neglected. Through adoption, awareness programs, and community outreach, we aim to inspire people to care for and adopt rescue animals.</p>
+            </div>
+            <div class="about-item">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Compassion</li>
+                    <li>Respect for all living beings</li>
+                    <li>Transparency and accountability</li>
+                    <li>Commitment to animal welfare</li>
+                    <li>Education and awareness</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>Meet Our Team</h3>
+        <p>Our team consists of passionate and dedicated individuals who work tirelessly to ensure the welfare of animals. From animal caretakers to volunteers, we all share one goal: to make the world a better place for animals in need.</p>
+        
+        <div class="team">
+            <div class="team-member">
+                <h4>Preethi</h4>
+                <p>Founder & CEO</p>
+                <p>Preethi is the driving force behind Animal Rescue. With a deep passion for animals, she has dedicated her life to animal welfare and rescue efforts.</p>
+            </div>
+            <div class="team-member">
+                <h4>Harini</h4>
+                <p>Volunteer Coordinator</p>
+                <p>Harini manages our team of volunteers and coordinates our outreach efforts. She’s always looking for ways to engage the community in our cause.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! If you have any questions, need more information, or would like to volunteer, feel free to reach out to us.</p>
+
+        <form action="mailto:info@animalrescue.org" method="POST" enctype="multipart/form-data" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+        </form>
+
+        <h3>Our Location</h3>
+        <p>If you'd prefer to visit us in person, you can find us at:</p>
+        <address>
+            Animal Rescue Center<br>
+            123 Rescue Lane<br>
+            City, State 12345<br>
+            Email: info@animalrescue.org<br>
+            Phone: (123) 456-7890
+        </address>
+    </section>
+     <!-- Thank You Section -->
+     <section id="thank-you" class="section">
+        <h2>Thank You for Your Generosity!</h2>
+        <p>Your donation/adoption request has been received. We truly appreciate your support in helping us provide better lives for the animals in need.</p>
+
+        <div class="thank-you-actions">
+            <h3>Next Steps</h3>
+            <p>Here are some ways you can further help:</p>
+            <ul>
+                <li><a href="#donate">Make Another Donation</a></li>
+                <li><a href="#adopt">Adopt Another Pet</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://www.animalrescue.org/volunteer">Volunteer with Us</a></li>
+            </ul>
+        </div>
+
+        <div class="thank-you-footer">
+            <p>If you have any questions or need assistance, feel free to <a href="#contact">contact us</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Animal Rescue | All rights reserved.</p>
+    </footer>
+    <style>
+        /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(122, 124, 131);
+    color: #0a0202;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #25074d;
+    color: rgb(236, 235, 235);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: rgb(228, 222, 222);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    background-color: #020541;
+
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image:url('https://static.vecteezy.com/system/resources/previews/025/188/627/non_2x/playful-puppy-and-kitten-sitting-outdoors-enjoying-nature-beauty-generated-by-ai-free-photo.jpg'); /* Add your own image */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(78, 29, 29, 0.1);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #100326;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #010002;
+}
+
+/* Form Styling */
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #4CAF50;
+}
+
+/* Adoption Section */
+.animal {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animal img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.animal .info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.animal h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.animal p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.animal .adopt-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.animal .adopt-btn:hover {
+    background-color: #c7a6ef;
+}
+
+/* Donation Section */
+#donateButton {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#donateButton:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+.footer {
+    background-color: #25074d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 20px 10px;
+    }
+
+    .animal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .animal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .animal .info {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    /* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #333;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adoption Form */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+}
+</style>
+<style>
+/* Available Pets Section */
+#adoptPets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.pet {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pet:hover {
+    transform: scale(1.05);
+}
+
+.pet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.pet p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.pet .adopt-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pet .adopt-btn:hover {
+    background-color: #45a049;
+}
+
+/* Button Styling */
+.adopt-btn {
+    width: 100%;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #25074d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #adoptPets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pet {
+        width: 100%;
+    }
+}
+    </style>
+    <style>
+        /* About Us Section */
+#about {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-item {
+    flex: 1;
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-item p,
+.about-item ul {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.about-item ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.team {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+    </style>
+    <style>
+        /* Contact Us Section */
+#contact {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Address Section */
+address {
+    font-style: normal;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #25074d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+    </style>
+    <style>
+        /* Thank You Section */
+#thank-you {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thank-you-actions {
+    margin-top: 30px;
+}
+
+.thank-you-actions h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.thank-you-actions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.thank-you-actions li {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.thank-you-actions a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.thank-you-actions a:hover {
+    color: #45a049;
+}
+
+.thank-you-footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.thank-you-footer a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.thank-you-footer a:hover {
+    color: #45a049;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+    </style>
+    <style>
+        /* Volunteer Section */
+#volunteers {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.volunteer-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.role {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.role p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.volunteer-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #25074d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+    </style>
+</body>
+</html>
